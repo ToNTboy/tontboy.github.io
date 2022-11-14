@@ -16,13 +16,27 @@ body {
     /* height: 60px; */
     padding: 0 30px;
     color: white;
-    font-weight: bold;
+    /* font-weight: bold; */
+}
+
+.abstract {
+    margin: 0px;
+    font-size: 10pt;
+    text-align: justify;
+    text-justify: newspaper;
+}
+
+.sub-para {
+    padding: auto;
+    margin: 0;
 }
 
 .introduction {
-    padding: 0 40px 60px 30px;
+    padding: 20px 40px 60px 30px;
     color: white;
     font-size: 10pt;
+    text-align: justify;
+    text-justify: newspaper;
 }
 
 .content {
@@ -66,6 +80,16 @@ body {
 }
 
 .footer-logo {
+    margin: auto auto;
     padding: 16px;
     text-align: center;
+    display: flex;
+    width: fit-content;
+}
+
+.mid-line {
+    width: 1px;
+    height: 60px;
+    margin: 0 8px 0 10px;
+    background-color: #e2e2e2;
 }

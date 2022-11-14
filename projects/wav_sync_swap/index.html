@@ -16,15 +16,33 @@
                 <img src="./imgs/THUHCSI_logo.png" alt="THUHCSI_Logo" height=100px>
             </div>
             <div class="head-title">
-                <p>WavSyncSwap: End-to-End Portrait-Customized Audio-Driven Talking Face Generation</p>
-                <p>Submitted to ICASSP 2023</p>
+                <h3>WavSyncSwap: End-to-End Portrait-Customized Audio-Driven Talking Face Generation</h3>
+                <h5>Submitted to ICASSP 2023</h5>
+                <h5 class="abstract">[Abstract]</h5>
+                <p class="abstract">Audio-driven talking face with portrait customization enhances the flexibility of
+                    avatar applications for different scenarios, such as online meetings, mixed reality, and data
+                    generation. Among the existing methods, audio-driven talking face and face swapping are typically
+                    viewed as separate tasks that are cascaded to achieve the objective. Using state-of-the-art methods
+                    Wav2Lip and SimSwap for this purpose, we meet some issues: affected mouth synchronization, lost
+                    texture information, and slow inference speed. To resolve these issues, we propose an end-to-end
+                    model that combines the advantages of both approaches. Our approach generates highly-synchronized
+                    mouth with the aid of a pre-trained lip-sync discriminator. And identity information is provided by
+                    ArcFace and the ID injection module in the model because of its strong correlation with facial
+                    texture. Experimental results demonstrate that our method achieves lip-sync accuracy comparable to
+                    real synced videos and preserves more texture details than cascade methods. Also, our approach
+                    improves the inference speed.</p>
             </div>
             <div class="introduction">
-                <p>Given a target video, a source face image, and an arbitrary audio, our method can generate a talking face video in which the identity information comes from the source face image, the mouth shape is synchronized with the given audio, and the other parts come from the given target video.</p>
+                <p class="sub-para">[Demos]</p>
+                <p class="sub-para">Given a target video, a source face image, and an arbitrary audio, our method can
+                    generate a talking face video in which the identity information comes from the source face image,
+                    the mouth shape is synchronized with the given audio, and the other parts come from the given target
+                    video.</p>
             </div>
         </div>
 
         <div class="content">
+
             <div class="demos">
                 <div class="demo-description">
                     <p>使用原始目标视频的语音驱动</p>
@@ -40,25 +58,25 @@
 
                         <div class="target-video center-box">
                             <video width="128" height="128" controls>
-                                <source src="demos/case1/target-video.mp4" type="video/mp4">
+                                <source src="demos/case1/tgt.mp4" type="video/mp4">
                             </video>
                         </div>
                         <div class="target-audio center-box">
                             <audio controls>
-                                <source src="demos/case1/cascade_result.mp4" type="audio/mpeg">
+                                <source src="demos/case1/cascade.mp4" type="audio/mpeg">
                             </audio>
                         </div>
                         <div class="source-face center-box">
-                            <img src="demos/case1/source-face.jpg" alt="Source Face" width="128" height="128">
+                            <img src="demos/case1/ref.jpg" alt="Source Face" width="128" height="128">
                         </div>
                         <div class="result-video center-box">
                             <video width="128" height="128" controls>
-                                <source src="demos/case1/cascade_result.mp4" type="video/mp4">
+                                <source src="demos/case1/cascade.mp4" type="video/mp4">
                             </video>
                         </div>
                         <div class="result-video center-box">
                             <video width="128" height="128" controls>
-                                <source src="demos/case1/proposed_result.mp4" type="video/mp4">
+                                <source src="demos/case1/proposed.mp4" type="video/mp4">
                             </video>
                         </div>
                     </div>
@@ -71,11 +89,6 @@
                 </div>
                 <div>
                     <div class="demo-item">
-                        <!-- <div class="title_info"><p>Target video</p></div>
-                        <div class="title_info"><p>Target audio</p></div>
-                        <div class="title_info"><p>Source face image</p></div>
-                        <div class="title_info"><p>Result video:<br>Cascade method<br>(Wav2Lip -> SimSwap)</p></div>
-                        <div class="title_info"><p>Result video:<br>Proposed method<br>(WavSyncSwap)</p></div> -->
 
                         <p class="center-box">Target video</p>
                         <p class="center-box">Target audio</p>
@@ -85,25 +98,25 @@
 
                         <div class="target-video center-box">
                             <video width="128" height="128" controls>
-                                <source src="demos/case1/target-video.mp4" type="video/mp4">
+                                <source src="demos/case2/tgt.mp4" type="video/mp4">
                             </video>
                         </div>
                         <div class="target-audio center-box">
                             <audio controls>
-                                <source src="demos/case1/cascade_result.mp4" type="audio/mpeg">
+                                <source src="demos/case2/cascade.mp4" type="audio/mpeg">
                             </audio>
                         </div>
                         <div class="source-face center-box">
-                            <img src="demos/case1/source-face.jpg" alt="Source Face" width="128" height="128">
+                            <img src="demos/case2/ref.jpg" alt="Source Face" width="128" height="128">
                         </div>
                         <div class="result-video center-box">
                             <video width="128" height="128" controls>
-                                <source src="demos/case1/cascade_result.mp4" type="video/mp4">
+                                <source src="demos/case2/cascade.mp4" type="video/mp4">
                             </video>
                         </div>
                         <div class="result-video center-box">
                             <video width="128" height="128" controls>
-                                <source src="demos/case1/proposed_result.mp4" type="video/mp4">
+                                <source src="demos/case2/proposed.mp4" type="video/mp4">
                             </video>
                         </div>
                     </div>
@@ -116,11 +129,6 @@
                 </div>
                 <div>
                     <div class="demo-item">
-                        <!-- <div class="title_info"><p>Target video</p></div>
-                        <div class="title_info"><p>Target audio</p></div>
-                        <div class="title_info"><p>Source face image</p></div>
-                        <div class="title_info"><p>Result video:<br>Cascade method<br>(Wav2Lip -> SimSwap)</p></div>
-                        <div class="title_info"><p>Result video:<br>Proposed method<br>(WavSyncSwap)</p></div> -->
 
                         <p class="center-box">Target video</p>
                         <p class="center-box">Target audio</p>
@@ -130,25 +138,25 @@
 
                         <div class="target-video center-box">
                             <video width="128" height="128" controls>
-                                <source src="demos/case1/target-video.mp4" type="video/mp4">
+                                <source src="demos/case3/tgt.mp4" type="video/mp4">
                             </video>
                         </div>
                         <div class="target-audio center-box">
                             <audio controls>
-                                <source src="demos/case1/cascade_result.mp4" type="audio/mpeg">
+                                <source src="demos/case3/cascade.mp4" type="audio/mpeg">
                             </audio>
                         </div>
                         <div class="source-face center-box">
-                            <img src="demos/case1/source-face.jpg" alt="Source Face" width="128" height="128">
+                            <img src="demos/case3/ref.jpg" alt="Source Face" width="128" height="128">
                         </div>
                         <div class="result-video center-box">
                             <video width="128" height="128" controls>
-                                <source src="demos/case1/cascade_result.mp4" type="video/mp4">
+                                <source src="demos/case3/cascade.mp4" type="video/mp4">
                             </video>
                         </div>
                         <div class="result-video center-box">
                             <video width="128" height="128" controls>
-                                <source src="demos/case1/proposed_result.mp4" type="video/mp4">
+                                <source src="demos/case3/proposed.mp4" type="video/mp4">
                             </video>
                         </div>
                     </div>
@@ -161,11 +169,6 @@
                 </div>
                 <div>
                     <div class="demo-item">
-                        <!-- <div class="title_info"><p>Target video</p></div>
-                        <div class="title_info"><p>Target audio</p></div>
-                        <div class="title_info"><p>Source face image</p></div>
-                        <div class="title_info"><p>Result video:<br>Cascade method<br>(Wav2Lip -> SimSwap)</p></div>
-                        <div class="title_info"><p>Result video:<br>Proposed method<br>(WavSyncSwap)</p></div> -->
 
                         <p class="center-box">Target video</p>
                         <p class="center-box">Target audio</p>
@@ -175,25 +178,25 @@
 
                         <div class="target-video center-box">
                             <video width="128" height="128" controls>
-                                <source src="demos/case1/target-video.mp4" type="video/mp4">
+                                <source src="demos/case4/tgt.mp4" type="video/mp4">
                             </video>
                         </div>
                         <div class="target-audio center-box">
                             <audio controls>
-                                <source src="demos/case1/cascade_result.mp4" type="audio/mpeg">
+                                <source src="demos/case4/cascade.mp4" type="audio/mpeg">
                             </audio>
                         </div>
                         <div class="source-face center-box">
-                            <img src="demos/case1/source-face.jpg" alt="Source Face" width="128" height="128">
+                            <img src="demos/case4/ref.jpg" alt="Source Face" width="128" height="128">
                         </div>
                         <div class="result-video center-box">
                             <video width="128" height="128" controls>
-                                <source src="demos/case1/cascade_result.mp4" type="video/mp4">
+                                <source src="demos/case4/cascade.mp4" type="video/mp4">
                             </video>
                         </div>
                         <div class="result-video center-box">
                             <video width="128" height="128" controls>
-                                <source src="demos/case1/proposed_result.mp4" type="video/mp4">
+                                <source src="demos/case4/proposed.mp4" type="video/mp4">
                             </video>
                         </div>
                     </div>
@@ -207,7 +210,11 @@
 <footer>
     <div class="footer">
         <div class="footer-logo">
-            <img src="./imgs/THUHCSI_logo.png" alt="THUHCSI_Logo" height=60px>
+            <a target="_blank" href="https://thuhcsi.github.io/">
+                <img src="./imgs/THUHCSI_logo.png" alt="THUHCSI_Logo" height=60px>
+            </a>
+            <div class="mid-line"></div>
+            <img src="./imgs/PINGAN_logo.png" alt="PINGAN_Logo" height=60px>
         </div>
     </div>
 </footer>
